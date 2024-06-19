@@ -38,11 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # new 
+    # new for chat
     'corsheaders',
     'chat',
 
-
+    # new for account & auth & security
+    'accounts.apps.AccountsConfig',
 
 ]
 
@@ -139,4 +140,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-CORS_DRIGIN_ALLOW_ALOL = True
+CORS_ORIGIN_ALLOW_ALL = True
